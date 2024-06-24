@@ -1,0 +1,2014 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!-- examples of the neural network: LineTracking -->
+<!DOCTYPE NeuralNetwork [
+  <!ELEMENT NeuralNetwork ANY>
+  <!ATTLIST NeuralNetwork name CDATA #REQUIRED>
+  <!ATTLIST NeuralNetwork numberx CDATA #REQUIRED>
+  <!ATTLIST NeuralNetwork numbery CDATA #REQUIRED>
+  <!ELEMENT ExampleX ANY>
+  <!ATTLIST ExampleX value CDATA #REQUIRED>
+  <!ELEMENT ExampleY ANY>
+  <!ATTLIST ExampleY value CDATA #REQUIRED>
+]>
+<NeuralNetwork name="LineTracking" numberx="2" numbery="2">
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.1" />
+    <ExampleY value1="0.9" value2="0.1" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.9" value2="0.9" />
+    <ExampleY value1="0.9" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+  <Example>
+    <ExampleX value1="0.1" value2="0.9" />
+    <ExampleY value1="0.1" value2="0.9" />
+  </Example>
+</NeuralNetwork>
