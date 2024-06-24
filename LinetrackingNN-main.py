@@ -1,7 +1,13 @@
 ###############################################
 # LinetrackingNN                              #
-# (c) 2024 Thomas Kaffka, Düsseldorf, Germany #
-# 22.06.2024                                  #
+# Author: Th. Kaffka, Düsseldorf, Germany     #
+# Date: 21.06.2024 13:31  		                #
+# MIT License				                      #
+# Copyright (c) 2024 Thomas Kaffka	          # 
+# The above copyright notice and this         # 
+# permission notice shall be included in      #
+# all copies or substantial portions of       # 
+# the Software.				                   # 
 ###############################################
 from calliopemini import *
 from MotionKit import*
