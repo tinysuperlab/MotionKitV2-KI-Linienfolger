@@ -10,7 +10,7 @@ Eine Projektbeschreibung findet sich im Dokument LinetrackingAnleitung.pdf.
 
 MIT License
 
-Copyright (c) 2024 Thomas Kaffka
+Copyright (c) 2024 Thomas Kaffka, Düsseldorf, Germany
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
